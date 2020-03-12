@@ -1,0 +1,23 @@
+<app-header fxLayout="column"></app-header>
+
+<div fxLayout="row" fxFlex="100">
+  <app-sidebar fxLayout="column" fxFlex="300px"></app-sidebar>
+  <div fxLayout="column" fxFlex>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<app-footer fxLayout="column"></app-footer>
+
+<style>
+:host {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+}
+
+.content {
+  background: #71FA4C;
+}
+
+</style>
